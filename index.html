@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="adis.css">
+  <title>Girlfriend Day</title>
+</head>
+<body>
+  <p class="instruction">Click the heart
+  (Kalau mau aja sih)</p>
+  <div class="container">
+    <label>
+      <div class="heart">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg">
+      </div>
+      <input id="messageState" type="checkbox" style="display:none" />
+    </label>
+
+    <div class="message">
+      <h1 style="font-family: Cinzel, serif; font-size: 20px; letter-spacing: 1.2px;">Dear Nurul (gak tahu yang mana nama asli nya jir) ,</h1>
+      <p> 
+        <span>
+          &emsp; "Sayang
+          
+
+        </span>
+        <br><br>
+        <span>
+          &emsp; yah cuma mau bilang, aku bersyukur banget bisa kenal dan deket sama anda. Di dunia yang penuh orang asing ini, anda adalah satu dari sedikit orang yang bikin aku ngerasa "wah rumah, tapi agak berhantu sih" (kadang ada kadang tidak, tapi tergantung anda mau gentayangin siapa). Walaupun anda cuek, kadang nggak peka, kadang bikin rada rada ka, gwejh tetep sayang banget sama anda. Gimana ya, kek deh bagaimana dih kalau memang mau di putuskan ka, deh kek na rada rada ka
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+entah lah kenapa saya sesayang ini padahal ndk ku tahu bentuk asli na bagaimana cwek betulan apa bukan, dan entah lah kenapa anda mau ama gwejh yg jelek bleki gini jir. Bahkan yang anda anggap kekurangan, buat gwejh itu tetap bagian dari anda yang ku suka. gwejh suka waktu kamu ngingetin aku makan, walaupun kadang kadang ygy, tapi gwejh tau itu bentuk sayang anda. gwej suka waktu kamu marahin gwejh(walaupun agak seram ki), karena itu tandanya anda peduli. Dan jujur aku suka banget suara kamu. Entah kenapa, bikin hati gwejh dag dig dug ser jir(walaupun ya biasa mati topik dan topik nya permasalahan terus).
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Maaf ya, kalau gwejh sering bikin masalah. Maaf kalau gwejh terlalu mikir, terlalu nanya yang nggak-nggak, terlalu alay, terlalu rada rada. Tapi itu semua karena gweh… nggak pernah sesayang ini sama orang(kecuali emak gw dan bapak gw ygy). gwejh gak takut kehilangan kamu(kayak nya). gwjh cuman takut kamu pergi diam-diam, ninggalin gwejh tanpa kabar jir(kek naruto aja). Aku takut kita lost contact, padahal gwjh pengin terus denger kabar anda, setiap hari, tiap waktu.
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+gwejh janji, gwejh bakal belajar jadi lebih baik buat anda. Gwejh mau anda bahagia, walaupun anda nggak banyak ngomong, gwejh ngerti kok walaupun banyak yang di sembunyikan yah gpp kan terserah anda hehe. Dan gwejh akan selalu ada di sini, buat jadi tempat anda pulang, kapan pun anda butuh.
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Kalo anda capek, cerita ya. Kalo anda kesel, bilang ya. Jangan simpen sendiri. gwejh di sini, selalu. anda nggak pernah sendiri. Dan anda, anda selalu jadi tempat favorit di hati orang orang.
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Makasih udah jadi alasan gwejh senyum senyum sendiri(walaupun kayak orang gila), bahkan di hari yang paling berat sekalipun. gwejh sayang anda, banget. Bukan karena anda sempurna, tapi karena anda adalah anda… dan itu cukup buat gwejh.
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Selamat tidur(karna malam baru ku kirim), sayangku. Semoga mimpi kamu indah malam ini. Dan besok… aku bakal jatuh cinta lagi sama kamu. Sama kamu yang itu-itu aja, tapi selalu bikin hati aku hangat(hangat tuh maksd nya itu air hanget atau teh anget).
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Love you more and sory2 telat ka kirim na, sebenarnya untuk hari girlfriend sedunia, tapi ya mau di apa kalau di gadai leptop bayar ukt, HeHe
+
+        </span>
+        <br><br>
+        <span>
+          &emsp;
+Love you more atas pencapaian nya yah dan cepat sembuh ygy"
+        </span>      
+      </p>
+      <br>
+      <div class="sincere">
+        <p style="font-weight: bold;"> I Love you More ,</p>
+        <p>Mahluk Ndk Tahu Dari Mana Ini</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="bgMusic" loop>
+    <source src="arta.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Script -->
+  <script>
+    const checkbox = document.getElementById('messageState');
+    const audio = document.getElementById('bgMusic');
+
+    checkbox.addEventListener('change', function () {
+      if (this.checked) {
+        audio.play();
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+  </script>
+
+  <script src="jquery.js"></script>
+  <script src="jquery2.1.js"></script>
+  <script defer src="a.js"></script>
+</body>
+</html>
